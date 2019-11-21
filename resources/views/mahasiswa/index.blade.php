@@ -21,28 +21,18 @@
 			    </tr>
 			  </thead>
 			  <tbody>
+			  	@foreach ($mahasiswa as $mhs)
 			    <tr>
 			      <th scope="row">1</th>
-			      <td>Mark</td>
-			      <td>Otto</td>
-			      <td>@mdo</td>
-			      <td>ertw</td>
-			      <td>eer</td>
+			      <td>{{$mhs -> nrp}}</td>
+			      <td>{{$mhs -> nama}}</td>
+			      <td>{{$mhs -> email}}</td>
+			      <td>{{$mhs -> jurusan}}</td>
+			      <td><a class="badge badge-success" href="">edit</a>
+			     	 <a class="badge badge-danger" href="">hapus</a>
+			  		<!-- <a class="badge badge-success" href="">edit</a> --></td>
 			    </tr>
-			    <tr>
-			      <th scope="row">2</th>
-			      <td>Jacob</td>
-			      <td>Thornton</td>
-			      <td>@fat</td>
-			      <td>sadfa</td>
-			      <td>sdfs</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>Larry</td>
-			      <td>the Bird</td>
-			      <td>@twitter</td>
-			    </tr>
+			@endforeach
 			  </tbody>
 			</table>
 		</div>
