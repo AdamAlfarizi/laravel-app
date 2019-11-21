@@ -23,7 +23,7 @@
 			  <tbody>
 			  	@foreach ($mahasiswa as $mhs)
 			    <tr>
-			      <th scope="row">1</th>
+			      <th scope="row">{{$loop -> iteration}}</th>
 			      <td>{{$mhs -> nrp}}</td>
 			      <td>{{$mhs -> nama}}</td>
 			      <td>{{$mhs -> email}}</td>
